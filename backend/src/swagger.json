@@ -1,0 +1,125 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "API do Desafio Final",
+    "description": "Esta é a API do desafio final Start Tech.",
+    "version": "0.0.1"
+  },
+
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "ambiente de desenvolvimento"
+    }
+  ],
+
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de Candidato",
+        "description": "Rota de cadastro de usuário recebe: nome, cargo, data de nascimento, sexo, estado civil, endereço, bairro, cep, cidade, estado, celular, telefone1, telefone2, contato, email, identidade, órgão expedidor, cpf, habilitação, veículo.",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "cargo": {
+                    "type": "string"
+                  },
+                  "sexo": {
+                    "type": "string"
+                  },
+                  "nascimento": {
+                    "type": "string"
+                  },
+                  "logradouro": {
+                    "type": "string"
+                  },
+                  "numero": {
+                    "type": "string"
+                  },
+                  "bairro": {
+                    "type": "string"
+                  },
+                  "cep": {
+                    "type": "string"
+                  },
+                  "cidade": {
+                    "type": "string"
+                  },
+                  "uf": {
+                    "type": "string"
+                  },
+                  "celular": {
+                    "type": "string"
+                  },
+                  "telefone1": {
+                    "type": "string"
+                  },
+                  "telefone2": {
+                    "type": "string"
+                  },
+                  "contato": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "identidade": {
+                    "type": "string"
+                  },
+                  "expedidor": {
+                    "type": "string"
+                  },
+                  "cpf": {
+                    "type": "string"
+                  },
+                  "habilitacao": {
+                    "type": "string"
+                  },
+                  "veiculo": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "Fulana de Tal": {
+                  "value": {
+                    "nome": "Fulada de Tal",
+                    "cargo": "Desenvolvedora fullstack",
+                    "sexo": "Feminino",
+                    "nascimento": "01-01-2001",
+                    "civil": "União estável",
+                    "logradouro": "Rua tal, 00. Complemento tal.",
+                    "numero": "00",
+                    "bairro": "Tal",
+                    "cep": "00000-000",
+                    "cidade": "Tal",
+                    "uf": "Tal",
+                    "celular": "(00)00000-0000",
+                    "telefone1": "(00)0000-0000",
+                    "telefone2": "(00)0000-0000",
+                    "contato": "Fulano",
+                    "email": "fulanadetal@email.com",
+                    "identidade": "0000000000000", 
+                    "expedidor": "SSP XX",
+                    "cpf": "000.000.000-00",
+                    "habilitacao": "Não",
+                    "veiculo": "Não"
+
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
