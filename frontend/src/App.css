@@ -1,0 +1,120 @@
+*{
+  background:black ;
+  justify-content: space-around;
+
+}
+
+header{ 
+  background: rgb(153, 5, 79) url("./image.jpg") no-repeat top;
+  height: 9rem;
+  justify-content: space-around;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1rem solid rgb(153, 5, 79);
+  margin:0.1rem
+  
+  
+}
+
+h2 {
+  margin-top: 2.5rem;
+}
+.topTitle {
+  text-align:center;
+  background-color:  rgb(153, 5, 79);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  
+
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  width: 10.5rem;
+  margin:0.8rem;
+  }
+
+div {
+  border: 0.1rem solid rgb(153, 5, 79);
+  text-align:left;
+  display: flex;
+  margin: 0.1rem;
+}
+.inputForm {
+  width: 30rem;
+  border: 0.1rem solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.8rem;
+  background-color: white;
+  color: black;
+  text-align: left;
+  }
+
+
+input {
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-items: space-around;
+  text-align: center;
+}
+
+button {
+  color: #FFFF;
+  background-color: #0000;
+  border-radius: 62px;
+  border: 0.15rem solid #0000 ;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
+
+button:hover {
+  background-color:  rgb(153, 5, 79);
+  transition: 0.5s;
+  border: 0.15rem solid #0000;
+  font-weight: bold;
+}
+
+span{ 
+  transition: scale (1);
+  color: rgb(153, 5, 79);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  
+}
+
+footer{
+  margin-top: 1rem;
+  border: 3px solid rgb(153, 5, 79);
+  padding: 1rem;
+  font-weight: bold;
+  margin: 0.1rem;
+}
+
+@media screen and (max-width: 720px) {
+  *{
+    justify-content: start;
+    max-width: 100%;    
+  }
+  header{ 
+    border: 0.1rem solid rgb(153, 5, 79);
+    height: 10rem;    
+  }
+  div {
+    justify-content: space-around;
+  }
+  button {
+    color: #FFFF;
+    background-color: #0000;
+    border: 0.1rem solid rgb(153, 5, 79);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 5rem;
+    height: 1.7rem;
+}
+
+}
